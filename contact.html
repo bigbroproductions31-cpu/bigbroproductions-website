@@ -6,10 +6,10 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> 
-<html class="no-js"> <!--<![endif]-->
+<html class="no-js" lang="en"> <!--<![endif]-->
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-  <meta name="description" content="Navigator Responsive Multipurpose Bootstrap HTML5 Template">
+  <meta name="description" content="Get in touch with Big Bro Productions by email at info@bigbroproductions.com or contact@bigbroproductions.com.">
   
    <meta name="author" content="Bigbroproductions.com">
 
@@ -18,23 +18,37 @@
     color: #fff;
 }
 </style>
- <title>Bigbroproductions</title>
+ <title>Contact Us | Big Bro Productions</title>
 
 <!-- Mobile Specific Meta
   ================================================== -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
   
   <!-- Favicon -->
-  <link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="icon" href="favicon.ico" sizes="any">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+  <link rel="apple-touch-icon" href="apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <meta name="theme-color" content="#000000">
+
+  <!-- SEO: canonical URL, social sharing cards, structured data -->
+  <link rel="canonical" href="https://bigbroproductions.com/contact.html">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Big Bro Productions">
+  <meta property="og:title" content="Contact Us | Big Bro Productions">
+  <meta property="og:description" content="Get in touch with Big Bro Productions by email at info@bigbroproductions.com or contact@bigbroproductions.com.">
+  <meta property="og:url" content="https://bigbroproductions.com/contact.html">
+  <meta property="og:image" content="https://bigbroproductions.com/images/og-image.jpg">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:image:alt" content="Film crew shooting a scene">
+  <meta name="twitter:card" content="summary_large_image">
+  <script type="application/ld+json">{"@context": "https://schema.org", "@type": "BreadcrumbList", "itemListElement": [{"@type": "ListItem", "position": 1, "name": "Home", "item": "https://bigbroproductions.com/"}, {"@type": "ListItem", "position": 2, "name": "Contact Us", "item": "https://bigbroproductions.com/contact.html"}]}</script>
   <!-- bootstrap.min css -->
   <link rel="stylesheet" href="plugins/bootstrap/bootstrap.min.css">
   <!-- Revo Slider CSS
     ================================================== -->
-  <!-- RS5.0 Main Stylesheet -->
-  <link rel="stylesheet" type="text/css" href="plugins/revo-slider/css/settings.css">
-  <!-- RS5.0 Layers and Navigation Styles -->
-  <link rel="stylesheet" type="text/css" href="plugins/revo-slider/css/layers.css">
-  <link rel="stylesheet" type="text/css" href="plugins/revo-slider/css/navigation.css">
   <!-- REVOLUTION STYLE SHEETS -->
   <link rel="stylesheet" type="text/css" href="plugins/revo-slider/fonts/pe-icon-7-stroke/css/pe-icon-7-stroke.css">
   <link rel="stylesheet" type="text/css" href="plugins/revo-slider/fonts/font-awesome/css/font-awesome.min.css">
@@ -72,13 +86,12 @@ Fixed Navigation
             <div class="col-lg-12">
                 <nav class="navbar navbar-expand-lg">
                     <a class="navbar-brand" href="index.html">
-                        <img src="images/logo.png" alt="logo">
+                        <img src="images/logo.png" alt="Big Bro Productions">
                     </a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="tf-ion-android-menu"></span>
                     </button>
                     <div class="collapse navbar-collapse" id="navigation">
-                        <div class="collapse navbar-collapse" id="navigation">
                               <ul class="navbar-nav ml-auto">
                               <li class="nav-item">
                                 <a class="nav-link" href="index.html">Home</a>
@@ -101,7 +114,6 @@ Fixed Navigation
                             </li>
                            
                         </ul>
-                    </div>
                     </div>
                 </nav>
             </div>
@@ -251,7 +263,6 @@ Essential Scripts
 <script src="plugins/filterzr/jquery.filterizr.min.js"></script>
 <!-- Smooth Scroll js -->
 <script src="plugins/smooth-scroll/dist/js/smooth-scroll.min.js"></script>
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBI14J_PNWVd-m0gnUBkjmhoQyNyd7nllA"></script>
 <!-- Form Validation -->
 <script src="plugins/form-validation/jquery.form.js"></script>
 <script src="plugins/form-validation/jquery.validate.min.js"></script>
@@ -271,60 +282,6 @@ The following part can be removed on Server for On Demand Loading) -->
 <script type="text/javascript" src="plugins/revo-slider/js/extensions/revolution.extension.parallax.min.js"></script>
 <script type="text/javascript" src="plugins/revo-slider/js/extensions/revolution.extension.slideanims.min.js"></script>
 <script type="text/javascript" src="plugins/revo-slider/js/extensions/revolution.extension.video.min.js"></script>
-<script>
-    /* https://learn.jquery.com/using-jquery-core/document-ready/ */
-    jQuery(document).ready(function () {
-        /* initialize the slider based on the Slider's ID attribute */
-        jQuery('#rev_slider_1').show().revolution({
-
-            /* options are 'auto', 'fullwidth' or 'fullscreen' */
-            sliderLayout: 'fullscreen',
-
-            /* basic navigation arrows and bullets */
-            navigation: {
-
-                arrows: {
-                    style: "zeus",
-                    enable: true,
-                    hide_onmobile: true,
-                    hide_under: 600,
-                    hide_onleave: true,
-                    hide_delay: 200,
-                    hide_delay_mobile: 1200,
-                    tmp: '<div class="tp-title-wrap">    <div class="tp-arr-imgholder"></div> </div>',
-                    left: {
-                        h_align: "left",
-                        v_align: "center",
-                        h_offset: 30,
-                        v_offset: 0
-                    },
-                    right: {
-                        h_align: "right",
-                        v_align: "center",
-                        h_offset: 30,
-                        v_offset: 0
-                    }
-                }
-                ,
-                bullets: {
-                    enable: false,
-                    hide_onmobile: true,
-                    hide_under: 600,
-                    style: "metis",
-                    hide_onleave: true,
-                    hide_delay: 200,
-                    hide_delay_mobile: 1200,
-                    direction: "horizontal",
-                    h_align: "center",
-                    v_align: "bottom",
-                    h_offset: 0,
-                    v_offset: 30,
-                    space: 5,
-                    tmp: '<span class="tp-bullet-img-wrap">  <span class="tp-bullet-image"></span></span><span class="tp-bullet-title">{{title}}</span>'
-                }
-            }
-        });
-    });
-</script>
+<script src="js/slider-init.js"></script>
 </body>
 </html>

@@ -229,7 +229,10 @@
 		});
 	}
 
-	google.maps.event.addDomListener(window, 'load', initialize);
+	// Only when a page actually has a map and the Maps API is loaded
+	if (window.google && document.getElementById('map')) {
+		google.maps.event.addDomListener(window, 'load', initialize);
+	}
 
 
 })(jQuery);
