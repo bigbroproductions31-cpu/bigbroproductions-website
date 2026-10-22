@@ -5,6 +5,9 @@
 # Security headers for every page and file.
 # CSP: only our own scripts run (no inline JS); styles may be inline because the template
 # uses style="" attributes everywhere; fonts come from Google Fonts; videos from YouTube.
+# Deliberately no upgrade-insecure-requests: when the site is reached over http before https
+# works (e.g. while a new domain's certificate is pending) it makes every file fail to load.
+# Netlify redirects http to https on its own once the certificate exists.
 [[headers]]
   for = "/*"
   [headers.values]
@@ -20,8 +23,7 @@
       object-src 'none'; \
       base-uri 'self'; \
       form-action 'self'; \
-      frame-ancestors 'none'; \
-      upgrade-insecure-requests"""
+      frame-ancestors 'none'"""
     Strict-Transport-Security = "max-age=31536000"
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"
